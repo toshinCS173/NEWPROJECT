@@ -28,9 +28,8 @@ void main()
   printf("\n The root are imaginary");
   real_root1 = - b/(2*a);
   real_root2 = -b/(2*a);
-  img_root1 =
-  sqrt(d)/(2*a);
-  img_root2 =-sqrt(d)/(2*a);
+  img_root1 =(sqrt(d)/(2*a));
+  img_root2 =-(sqrt(d)/(2*a));
   printf("\n The real part of roots are %f and %f",real_root1,real_root2);
   printf("\n The imaginary part of the root are %f and %f",img_root1,img_root2);
  }
