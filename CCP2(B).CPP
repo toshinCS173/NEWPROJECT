@@ -2,10 +2,10 @@
 
 #include<stdio.h>
 #include<conio.h>
+void avg(int a, int b, int c);
 void main()
 {
  int n1,n2,n3;
- void avg(int a, int b, int c);
  clrscr();
  printf("\n Enter the three numbers:");
  scanf("%d%d%d",&n1,&n2,&n3);
