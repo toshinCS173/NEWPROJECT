@@ -40,8 +40,7 @@ void main()
  printf("The max marks in the subjects are \n");
  for(i=0;i<3;i++)
  {
-  printf("\n");
-  printf("%d",marks_max[i]);
+  printf("\t %d",marks_max[i]);
  }
  getch();
 }
