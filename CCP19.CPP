@@ -13,12 +13,13 @@ void main()
   b[i]=a[i];
   i++;
  }
+ b[i]='\0';
  for(i=0;b[i]!='\0';i++)
  {
   length++;
  }
- b[i]='\0';
- printf("The copied string is = %s \n",b);
+
+ printf("The copied string is = %s\n",b);
  printf("The length of the copied string %s is = %d \n",b,length);
  getch();
 }

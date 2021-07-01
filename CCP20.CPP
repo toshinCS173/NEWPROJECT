@@ -23,12 +23,13 @@ void main()
   i++;
   j++;
  }
+ c[j]='\0';
  for(j=0;c[j]!='\0';j++)
  {
   length++;
  }
- c[j]='\0';
- printf("THE RESULTANT/COMBINED STRING is : %s \n",c);
+
+ printf("THE RESULTANT/COMBINED STRING is : %s\n",c);
  printf("The length of the resultant string = %d \n",length);
  getch();
 }
