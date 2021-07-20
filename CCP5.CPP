@@ -1,18 +1,21 @@
-//WAP TO FIND THE AREA OF A TRIANGLE FROM THE INPUTS FOR SIDES OF THE TRIANGLE//
+//WAP TO FIND ALL POSSIBLE ROOTS OF A QUADRATIC EQUATIONS//
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
 void main()
 {
+ clrscr();
  int a,b,c;
- float d,root1,root2,real_root1,real_root2,img_root1,img_root2;
- printf("\n Enter the value for 1->co-efficient of x^2,\n 2->co-efficient of x,\n 3->constant:");
+ float d,root1,root2;
+ double real_root;
+ double img_root;
+ printf("\n Enter the value for 1->co-efficient of x^2,\n 2->co-efficient of x,\n 3->constant: \n");
  scanf("%d%d%d",&a,&b,&c);
  d=(b*b)-(4*a*c);
  if (d==0)
  {
   printf("\n The roots are equal and real");
-  root1=(-b)/(2*a);
+  root1=(-b-sqrt(d))/(2*a);
   root2=root1;
   printf("\n The roots are %f and %f",root1,root2);
  }
@@ -26,12 +29,10 @@ void main()
  else
  {
   printf("\n The root are imaginary");
-  real_root1 = - b/(2*a);
-  real_root2 = -b/(2*a);
-  img_root1 =(sqrt(d)/(2*a));
-  img_root2 =-(sqrt(d)/(2*a));
-  printf("\n The real part of roots are %f and %f",real_root1,real_root2);
-  printf("\n The imaginary part of the root are %f and %f",img_root1,img_root2);
+  real_root= - b/(2*a);
+  img_root =sqrt(-d)/(2*a);
+  printf("\n The real part of roots are %2lf\n",real_root);
+  printf("\n The imaginary part of the root are %2lfi \n",img_root);
  }
  getch();
 }
