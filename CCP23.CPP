@@ -1,7 +1,7 @@
 //Q23. WAP to illustrate pointers in swapping two numbers//
 #include<stdio.h>
 #include<conio.h>
-void swap(int *a,int *b);
+void swap(int *a , int *b);
 void main()
 {
  clrscr();
@@ -12,4 +12,11 @@ void main()
  swap(&num1,&num2);
  printf("The values after swapping num1=%d and num2=%d \n",num1,num2);
  getch();
+}
+void swap(int *a, int *b)
+{
+ int t;
+ t=*a;
+ *a=*b;
+ *b=t;
 }

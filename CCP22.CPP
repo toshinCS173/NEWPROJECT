@@ -11,9 +11,13 @@ void main()
   int no_pages;
   float price;
   char publication[20];
- }book1,book2,book3;
+ };
+ struct book book1;
+ struct book book2;
+ struct book book3;
  printf("Enter the details of book-1 : Author,Title,Number of pages,price,publication, \n");
- scanf("%s%s%d%f%s",&book1.author,&book1.title,&book1.no_pages,&book1.price,&book1.publication);  printf("Enter the details of book-2 : Author,Title,Number of pages,price,publication, \n");
+ scanf("%s%s%d%f%s",&book1.author,&book1.title,&book1.no_pages,&book1.price,&book1.publication);
+ printf("Enter the details of book-2 : Author,Title,Number of pages,price,publication, 	\n");
  scanf("%s%s%d%f%s",&book2.author,&book2.title,&book2.no_pages,&book2.price,&book2.publication);
  printf("Enter the details of book-3 : Author,Title,Number of pages,price,publication, \n");
  scanf("%s%s%d%f%s",&book3.author,&book3.title,&book3.no_pages,&book3.price,&book3.publication);
