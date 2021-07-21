@@ -1,3 +1,4 @@
+
 //WAP TO FIND THE DISTANCE BETWEEN TWO POINTS//
 
 #include<stdio.h>
@@ -11,8 +12,8 @@ void main()
  printf("\n Enter the values for the first co-ordinates(points):");
  scanf("%d%d", &x1, &y1);
  printf("\n Enter the values for the second co-ordinates(point):");
- scanf("%d%d", &x2, y2);
+ scanf("%d%d", &x2,&y2);
  d=sqrt(pow((x2-x1),2)+pow((y2-y1),2));
- printf("\n The distance between (%d%d) and (%d%d) is = %f",x1,y1,x2,y2,d);
+ printf("\n The distance between (%d,%d) and (%d,%d) is = %f",x1,y1,x2,y2,d);
  getch();
 }

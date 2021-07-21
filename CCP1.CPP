@@ -2,9 +2,9 @@
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-
 float main()
 {
+ clrscr();
  float F,C;
  printf("\n Enter the value for temperature in FAHRENHEIT :");
  scanf("%f", &F);

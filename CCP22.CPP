@@ -16,11 +16,17 @@ void main()
  struct book book2;
  struct book book3;
  printf("Enter the details of book-1 : Author,Title,Number of pages,price,publication, \n");
- scanf("%s%s%d%f%s",&book1.author,&book1.title,&book1.no_pages,&book1.price,&book1.publication);
+ scanf("%s%s",&book1.author,&book1.title);
+ scanf("%d%f",&book1.no_pages,&book1.price,&book1.publication);
+ scanf("%s",&book1.publication);
  printf("Enter the details of book-2 : Author,Title,Number of pages,price,publication, 	\n");
- scanf("%s%s%d%f%s",&book2.author,&book2.title,&book2.no_pages,&book2.price,&book2.publication);
+ scanf("%s%s",&book2.author,&book2.title);
+ scanf("%d%f",&book2.no_pages,&book2.price,&book2.publication);
+ scanf("%s",&book2.publication);
  printf("Enter the details of book-3 : Author,Title,Number of pages,price,publication, \n");
- scanf("%s%s%d%f%s",&book3.author,&book3.title,&book3.no_pages,&book3.price,&book3.publication);
+ scanf("%s%s",&book3.author,&book3.title);
+ scanf("%d%f",&book3.no_pages,&book3.price,&book3.publication);
+ scanf("%s",&book3.publication);
  if(book1.price>book2.price&&book1.price>book3.price)
  {
   printf("The book 1 is expensive , detail->Author-%s, Tile-%s, Publication-%s, Price-%f \n",book1.author,book1.title,book1.publication,book1.price);

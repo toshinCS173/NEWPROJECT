@@ -34,5 +34,10 @@ void main()
  a[min]=a[max];
  a[max]=temp;
  printf("After exchanging the largest no is %d and the smallest no is %d \n" ,a[max],a[min]);
+ printf("After interchange array elements are:\n");
+ for(i=0;i<n;i++)
+ {
+  printf("%d",a[i]);
+ }
  getch();
 }

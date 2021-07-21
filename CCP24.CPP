@@ -13,9 +13,11 @@ void main()
   int result;
  }stu1,stu2;
  printf("Enter the deatil of STUDENT-1: NAME,ROLL_NO,SECTION,DEPARTMENT,FEES AND RESULT : \n");
- scanf("%s%s%s%s%f%d",&stu1.name,&stu1.roll_no,&stu1.sec,&stu1.dept,&stu1.fees,&stu1.result);
+ scanf("%s%s%s%s",&stu1.name,&stu1.roll_no,&stu1.sec,&stu1.dept);
+ scanf("%f%d",&stu1.fees,&stu1.fees);
  printf("Enter the deatil of STUDENT-2 NAME,ROLL_NO,SECTION,DEPARTMENT,FEES AND RESULT : \n");
- scanf("%s%s%s%s%f%d",&stu2.name,&stu2.roll_no,&stu2.sec,&stu2.dept,&stu2.fees,&stu2.result);
+ scanf("%s%s%s%s",&stu2.name,&stu2.roll_no,&stu2.sec,&stu2.dept);
+ scanf("%f%d",&stu2.fees,&stu2.fees);
  if(stu1.result>stu2.result)
  {
   printf("The student-1 has scored the highest, NAME-%s, ROLL NO-%s, SECTION-%s, DEAPRTMENT-%s, RESULT-%d \n",stu1.name,stu1.roll_no,stu1.sec,stu1.dept,stu1.result);

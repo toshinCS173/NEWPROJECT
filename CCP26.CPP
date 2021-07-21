@@ -2,25 +2,24 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-int main()
+void main()
 {
- FILE *BMSCE;
- char c;
+ clrscr();
+ FILE *fp;
  char str[40];
  printf("DATA INPUT \n");
- BMSCE=fopen("input.txt","w");
- while((c=getchar())!=EOF)
- putc(c,BMSCE);
- fclose(BMSCE);
+ fp=fopen("BMSCE.txt","w");
+ fgets(str,6,stdin);
+ fclose(fp);
  printf("DATA OUTPUT \n");
- BMSCE=fopen("input.txt","r");
- if(BMSCE==NULL)
+ fp=fopen("BMSCE.txt","r");
+ if(fp==NULL)
  {
   printf("error\n");
   exit(1);
  }
- fgets(str,40,BMSCE);
+ fgets(str,6,fp);
  puts(str);
- fclose(BMSCE);
- return 0;
+ fclose(fp);
+ getch();
 }
