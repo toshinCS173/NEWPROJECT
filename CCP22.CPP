@@ -17,15 +17,15 @@ void main()
  struct book book3;
  printf("Enter the details of book-1 : Author,Title,Number of pages,price,publication, \n");
  scanf("%s%s",&book1.author,&book1.title);
- scanf("%d%f",&book1.no_pages,&book1.price,&book1.publication);
+ scanf("%d%f",&book1.no_pages,&book1.price);
  scanf("%s",&book1.publication);
  printf("Enter the details of book-2 : Author,Title,Number of pages,price,publication, 	\n");
  scanf("%s%s",&book2.author,&book2.title);
- scanf("%d%f",&book2.no_pages,&book2.price,&book2.publication);
+ scanf("%d%f",&book2.no_pages,&book2.price);
  scanf("%s",&book2.publication);
  printf("Enter the details of book-3 : Author,Title,Number of pages,price,publication, \n");
  scanf("%s%s",&book3.author,&book3.title);
- scanf("%d%f",&book3.no_pages,&book3.price,&book3.publication);
+ scanf("%d%f",&book3.no_pages,&book3.price);
  scanf("%s",&book3.publication);
  if(book1.price>book2.price&&book1.price>book3.price)
  {
@@ -43,4 +43,5 @@ void main()
  {
   printf("ALL the three book are of same price. \n");
  }
+ getch();
 }
